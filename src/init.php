@@ -124,7 +124,8 @@ if ( ! class_exists( 'CMB2_Bootstrap_230_Trunk', false ) ) {
 				define( 'CMB2_LOADED', self::PRIORITY );
 			}
 
-			add_action( 'init', array( $this, 'include_cmb' ), self::PRIORITY );
+			//add_action( 'init', array( $this, 'include_cmb' ), self::PRIORITY );
+            $this->include_cmb();
 		}
 
 		/**
