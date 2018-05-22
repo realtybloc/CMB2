@@ -24,7 +24,7 @@
     ],
     "keywords": ["wordpress", "plugin", "metabox"],
     "homepage": "https://github.com/CMB2/CMB2",
-    "type": "wordpress-plugin",
+    "type": "library",
     "support": {
         "issues": "https://github.com/CMB2/CMB2/issues",
         "source": "http://wordpress.org/support/plugin/cmb2"
