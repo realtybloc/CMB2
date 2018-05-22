@@ -6,6 +6,9 @@
     "php": ">=5.6"
   },
   "autoload": {
-    "classmap": ["src/"]
+    "classmap": [
+      "src/",
+      "src/init.php"
+    ]
   }
 }
