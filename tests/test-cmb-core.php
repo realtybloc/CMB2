@@ -117,6 +117,7 @@ class Test_CMB2_Core extends Test_CMB2 {
 			'message_cb'       => '',
 			'option_key'       => '',
 			'disable_settings_errors' => false, // On settings pages (not options-general.php sub-pages), allows disabling.
+			'tab_group'        => '',
 		);
 
 		$this->cmb = new CMB2( $this->metabox_array );
@@ -274,6 +275,20 @@ class Test_CMB2_Core extends Test_CMB2 {
 
 	public function test_boxes_get_all() {
 		$this->assertContainsOnlyInstancesOf( 'CMB2', CMB2_Boxes::get_all() );
+	}
+
+	public function test_boxes_get_by() {
+		$boxes = CMB2_Boxes::get_by( 'classes', 'custom-class another-class' );
+		$this->assertContainsOnlyInstancesOf( 'CMB2', $boxes );
+		$this->assertSame( 1, count( $boxes ) );
+	}
+
+	public function test_boxes_filter_by() {
+		$all   = CMB2_Boxes::get_all();
+		$with  = CMB2_Boxes::get_by( 'classes', 'custom-class another-class' );
+		$boxes = CMB2_Boxes::filter_by( 'classes', 'custom-class another-class' );
+		$this->assertContainsOnlyInstancesOf( 'CMB2', $boxes );
+		$this->assertSame( count( $all ) - count( $with ), count( $boxes ) );
 	}
 
 	public function test_boxes_get() {
