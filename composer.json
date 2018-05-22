@@ -7,7 +7,6 @@
   },
   "autoload": {
     "classmap": [
-      "src/",
       "src/init.php"
     ]
   }

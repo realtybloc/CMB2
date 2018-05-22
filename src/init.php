@@ -54,7 +54,7 @@
  * ***********************************************************************
  */
 
-if ( ! class_exists( 'CMB2_Bootstrap_230_Trunk', false ) ) {
+if ( ! class_exists( 'CMB2_Bootstrap_230_Trunk' ) ) {
 
 	/**
 	 * Handles checking for and loading the newest version of CMB2
