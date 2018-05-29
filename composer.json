@@ -4,5 +4,8 @@
   "description": "CMB2 is a developer's toolkit for building metaboxes, custom fields, and forms for WordPress that will blow your mind.",
   "require": {
     "php": ">5.2.4"
+  },
+  "autoload": {
+    "files": ["init.php"]
   }
 }
