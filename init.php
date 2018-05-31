@@ -188,7 +188,6 @@ if ( ! class_exists( 'CMB2_Bootstrap_242_Trunk', false ) ) {
 	}
 
 	// Make it so...
-	// Should be initial trough wp
-	//CMB2_Bootstrap_242_Trunk::initiate();
+	CMB2_Bootstrap_242_Trunk::initiate();
 
 }// End if().
