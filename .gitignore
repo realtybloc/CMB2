@@ -1,9 +1,0 @@
-### macOS template
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Composer
-vendor/*
-!vendor/.gitkeep
